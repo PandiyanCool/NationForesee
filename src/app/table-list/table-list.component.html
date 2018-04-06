@@ -1,0 +1,43 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row" style="margin: 0px 50px 0px 50px;">
+            <div class="col-md-12">
+
+
+                <div class="card">
+                    <div class="card-header" data-background-color="green">
+                        <h4 class="title">Product Sheet</h4>
+                        <p class="category">
+                            <a target="_blank" href="/amazon-selling-manager/api/downloads/ProductTemplate.xlsx">
+                                Please upload the product sheet, click here to download the template</a>
+                        </p>
+
+                    </div>
+                    <div class="card-content table-responsive">
+                        <input type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".xlsx">
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-header" data-background-color="green">
+                        <h4 class="title">Container Sheet</h4>
+                        <p class="category">
+                            <a target="_blank" href="/amazon-selling-manager/api/downloads/ContainerTemplate.xlsx">
+                                Please upload the container sheet, click here to download the template</a>
+                        </p>
+
+                    </div>
+                    <div class="card-content table-responsive">
+                        <input type="file" (change)="fileContainerChange($event)" placeholder="Upload file" accept=".xlsx">
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

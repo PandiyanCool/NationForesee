@@ -1,0 +1,82 @@
+<footer style="background-color: #008975!important; color: #ffff;">
+    <div class="container-fluid">
+        <nav class="pull-left">
+            <ul>
+                <li style="font-size:25px;font-weight: 500">Amazon Selling Manager</li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <a [routerLink]="['/table-list']">
+                        <i class="material-icons">cloud_upload</i>
+                        File Upload
+                    </a>
+                </li>
+                <li class="dropdown" routerLinkActive="active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="material-icons">insert_chart</i> Report
+                        <!-- <p class="hidden-lg hidden-md">Profile</p> -->
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a [routerLink]="['/reports']">
+                                <i class="material-icons">playlist_play</i> Standard</a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/future']">
+                                <i class="material-icons">featured_play_list</i> Custom</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="material-icons">trending_up</i> Invoice
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a [routerLink]="['/future']">
+                                <i class="material-icons">list</i> Standard</a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/future']">
+                                <i class="material-icons">view_list</i> Custom</a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/future']">
+                                <i class="material-icons">featured_play_list</i> Tally</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="material-icons">star</i> Rating
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a [routerLink]="['/future']">
+                                <i class="material-icons">graphic_eq</i> Rank</a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/future']">
+                                <i class="material-icons">feedback</i> Feedback</a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <ul class="nav navbar-nav navbar-right">
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="material-icons">person</i>
+                    <span class="notification">1</span>
+                    <p class="hidden-lg hidden-md">Profile</p>
+                </a>
+                <ul class="dropdown-menu">
+                    <li (click)="logout()">
+                        <a href="#">LogOut</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</footer>

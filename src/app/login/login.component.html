@@ -1,0 +1,82 @@
+<div class="full-page login-page" filter-color="black">
+
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-4">
+                    <form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)" id="login-form" name="loginValues" novalidate="" class="ng-untouched ng-pristine ng-valid">
+                        <div class="card card-login">
+                            <div class="card-header text-center" data-background-color="red">
+                                <h4 class="card-title">Login</h4>
+
+                            </div>
+
+                            <div class="card-content">
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">email</i>
+                                    </span>
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label">Username</label>
+                                        <input class="form-control" type="text" (ngModel)="userName" name="userName" id="username" required>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">lock_outline</i>
+                                    </span>
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label">Password</label>
+                                        <input class="form-control" type="password" (ngModel)="password" name="password" id="password" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer text-center">
+                                <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg" type="submit" [disabled]="loginForm.invalid || formInvalid || isLoading">
+                                    Login
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer class="footer">
+            <div class="container">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Company
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    ©
+                    2018
+                    <a href="https://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                </p>
+            </div>
+        </footer> -->
+    <div class="full-page-background" style="background-image: url(https://i1.wp.com/www.retail-associates.com/wp-content/uploads/2016/10/website-login-background.jpg) "></div>
+</div>
+
+<!-- </app-login-cmp> -->
