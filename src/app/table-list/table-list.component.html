@@ -1,43 +1,31 @@
 <div class="main-content">
     <div class="container-fluid">
-        <div class="row" style="margin: 0px 50px 0px 50px;">
+        <div class="row">
             <div class="col-md-12">
-
-
                 <div class="card">
                     <div class="card-header" data-background-color="green">
-                        <h4 class="title">Product Sheet</h4>
-                        <p class="category">
-                            <a target="_blank" href="/amazon-selling-manager/api/downloads/ProductTemplate.xlsx">
-                                Please upload the product sheet, click here to download the template</a>
-                        </p>
-
+                        <h4 class="title">Actual rainfall in India during monsoon session</h4>
+                        <p class="category">(Jun-Sep) from 1901 to 2016</p>
                     </div>
-                    <div class="card-content table-responsive">
-                        <input type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".xlsx">
+                    <div class="card-content">
+                        <iframe src="https://visualize.data.gov.in/?inst=364aaef4-1b5b-4cf6-8b21-e2515d0e772b&vid=39781&embed=1" width="100%" height="635px">
+                            <p>Your browser does not support iframes.</p>
+                        </iframe>
                     </div>
                 </div>
-
-
-                <div class="card">
-                    <div class="card-header" data-background-color="green">
-                        <h4 class="title">Container Sheet</h4>
-                        <p class="category">
-                            <a target="_blank" href="/amazon-selling-manager/api/downloads/ContainerTemplate.xlsx">
-                                Please upload the container sheet, click here to download the template</a>
-                        </p>
-
-                    </div>
-                    <div class="card-content table-responsive">
-                        <input type="file" (change)="fileContainerChange($event)" placeholder="Upload file" accept=".xlsx">
-                    </div>
-                </div>
-
-
-
             </div>
-
-
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header" data-background-color="green">
+                        <h4 class="title">Drop-out Rate</h4>
+                        <p class="category">from 2013-14 to 2015-16</p>
+                    </div>
+                    <div class="card-content">
+                        <iframe src="https://visualize.data.gov.in/?inst=07b38f40-e011-4063-ba92-a757cedaeacf&embed=1" width="100%" height="635px">
+                            <p>Your browser does not support iframes.</p>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>

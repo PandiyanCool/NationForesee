@@ -20,6 +20,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { DataService, AuthService } from './shared';
 import { CookieService } from 'ngx-cookie-service';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { CookieService } from 'ngx-cookie-service';
     UserProfileComponent,
     TableListComponent,
     NotificationsComponent,
-    FutureComponent
+    FutureComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

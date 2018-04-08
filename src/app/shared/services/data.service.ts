@@ -9,7 +9,7 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class DataService {
-    private baseURL = Global.AmazonSellingManager[Global.AmazonSellingManager.env].endPoint;
+    private baseURL = Global.NationForsee[Global.NationForsee.env].endPoint;
 
 
     public userData: IUser = {
